@@ -26,6 +26,6 @@ def transcribe_multiple(files):
 
 audio_directory = './audio_files'
 files = [os.path.join(audio_directory, f) for f in os.listdir(audio_directory) if f.endswith(('.mp3', '.wav'))]
-
+files = files[0:6]
 
 transcribe_multiple(files)
